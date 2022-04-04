@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+        </style>
+        <link rel="stylesheet" href="index.css">
+       
+        
+    </head>
+    <body>
+        <div class='fullApp'> 
+            <div class='topSection'>
+                <div>
+                    <h1 class='title'>Metric / Imperial<br>Unit Conversion</h1>
+                </div>
+                <div>
+                    
+                    <input class='inpNumber' type = "number" id = "idInputEl" value = 0 min = "0" max = "9999" onchange="updateNum()"/>
+                
+
+                </div>
+            </div>
+            
+        <div class='bottomSection'>
+                <div class='metricGr'>
+                    <div class='metricsTitle'>
+                            Length <span class="bracketed">(Meter/Feet)</span>
+                    </div>
+                    <div class='results'>
+                            <span id='inputNMeters'>0</span> meters = <span id='resultFeetIp'>0</span> feet<br><span id='inputFt'>0</span> feet = <span id='resultMetersIp'>0</span> meters
+                    </div>
+                </div>
+                    
+                <div class='metricGr'>
+                        <div class='metricsTitle'>
+                            Volume <span class="bracketed">(Liters/Gallons)</span>
+                        </div>
+                    <div class='results'>
+                            <span id='inputNl'>0</span> liters = <span id='resultGallonsIp'>0</span> gallons<br> <span id='inputNg'>0</span> gallons = <span id='resultLitersIp'>0/span> liters
+                    </div>
+                </div>
+                    
+                <div class='metricGr'>
+                    <div class='metricsTitle'>
+                            Mass <span class="bracketed">(Kilograms/Pounds)</span>
+                    </div>
+                <div class='results'>
+                    <span id='inputNk'>0</span> kilos = <span id='resultPoundsIp'>0</span> pounds<br><span id='inputNp'>0</span> pounds = <span id='resultKilosIp'>0</span> kilos
+                </div>
+            </div>
+        </div>
+    </body>
+     <script src="index.js"></script>
+</html>
